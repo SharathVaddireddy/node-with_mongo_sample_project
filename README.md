@@ -15,7 +15,7 @@ _Note_: All the dependencies in package.json will be installed, which inturn cre
 ## API Documentation
 _Note_: Call from any REST CLIENT application to see the results, i use [POSTMAN](https://www.getpostman.com/downloads/)
 1. Create user
-> url: http://localhost:4000/user/getone </br> method_type: POST </br> content_type: application/json </br>req_body:```{
+> url: http://localhost:4000/user/create </br> method_type: POST </br> content_type: application/json </br>req_body:```{
     "firstName": "Varun",
     "lastName":"kumar",
     "email":"example@gmail.com",
@@ -39,7 +39,7 @@ expected_res: ``` {
     }
 } ```
 2. Get one User
-> url: http://localhost:4000/user/create </br> method_type: POST </br> content_type: application/json </br>req_body:```{
+> url: http://localhost:4000/user/getone </br> method_type: POST </br> content_type: application/json </br>req_body:```{
     "email":"sharathvaddireddy@gmail.com"
 } ``` </br> </br>
 expected_res: ``` {
