@@ -24,7 +24,7 @@ const config = require('./config/AppConfig');
  */
 mongoose.connect(config.database.url);
 mongoose.connection.on('connected', () => {
-    console.log('connected to db ' + config.database.url);
+    console.log(`connected to db ${config.database.url}`);
 });
 
 mongoose.connection.on('error', (err) => {
